@@ -62,7 +62,7 @@ def display_credentials():
     '''
     return Credentials.display_saved_credentials()
 
-
+#beginning of our app run
 def main():
     print("Yeey! This is your trustes password locker.Enter your name?")
     user_name = input()
@@ -99,10 +99,14 @@ def main():
             while True:
                 print('use this shortcodes in your progress :\n cc - create new credentials ,dc - delete credentials ,fd - find credentials, ds-dispaly saved credentials,ex - exit')
                 short_code = input().lower()
+
+                #if choosing to exit app 
                 if short_code == 'ex':
                     print('\n')
                     print(f'Goodbye your credentials are safe  {user_nmae}.')
                     break
+                #if choosing to find credential
+
                 elif short_code == 'fd':
                     print('\n')
                     print('Enter platform to be sought for')
@@ -118,6 +122,8 @@ def main():
                         print('\n')
                         print("That credential does not exist!")
                         print('\n')
+
+                #if choosing to display credentials 
                 elif short_code == 'ds':
                     if display_credentials():
                         print('\n')
@@ -134,7 +140,7 @@ def main():
                             print('/n')
                             print('Looks like the details dont exist yet!')
                             print('/n')
-
+                #if choosing to delete credentials
 
                 elif short_code == 'dc':
 
