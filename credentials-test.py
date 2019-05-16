@@ -1,4 +1,4 @@
-import pyperclip
+#import pyperclip
 import unittest
 from credentials import Credentials
 
@@ -61,7 +61,7 @@ class TestCredentials(unittest.TestCase):
         '''
         check if user credentials can be found  using platform and displayed
         '''
-        self.nnew_credentials.save_credentials()
+        self.new_credentials.save_credentials()
         test_credentials = Credentials("LinkedIn","kmunge","linkinke")
         test_credentials.save_credentials()
 
