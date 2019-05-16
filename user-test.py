@@ -1,8 +1,9 @@
+#import pyperclip
 import unittest
 from user import  User
-import pyperclip
 
-class TestUser(unnitest.TestCase):
+
+class TestUser(unittest.TestCase):
     '''
         Test class that defines the cases for user and credential class behaviours
 
@@ -24,7 +25,7 @@ class TestUser(unnitest.TestCase):
         self.assertEqual(self.new_user.first_name,"Kevin")
         self.assertEqual(self.new_user.last_name,"Munge")
         self.assertEqual(self.new_user.user_name,"kmunge")
-        self.assertEqual(self.new_user.password,"mashup")
+        self.assertEqual(self.new_user.password,"mashaup")
 
     def tearDown(self):
         '''
@@ -44,7 +45,7 @@ class TestUser(unnitest.TestCase):
         test_save_multiple_user to test if multiple userscan be saved into our list
         '''
         self.new_user.save_user()
-        test_user = User |("Asha","Kibet", "sheraton")
+        test_user = User ("Asha","Kibet", "sheraton","mashaup")
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
 
@@ -53,22 +54,22 @@ class TestUser(unnitest.TestCase):
         test if we can search by their username and display their details
         '''
         self.new_user.save_user()
-        test_user = User("Kamau","Voke","Brayo")
+        test_user = User("Lamau","Voke","Kamau","mashaup")
         test_user.save_user()
 
-        find_user = User.ftest_find_user_by_user_name("Kamau")
+        find_user = test_user.find_by_user_name('Kamau')   
+        self.assertEqual(find_user.user_name,test_user.user_name)
 
-        self.assertEqual(find_user.password, test_user.password)
 
     def test_user_exists(self):
         '''
         test if boolean is returned if user daent exist
         '''
-        self.new_user.save_user()
+#        self.new_user.save_user()
         test_user = User("Noella","Ann","shiko","Kevin")
         test_user.save_user()
 
-        user_exists = User.user_exists("Kevin")
+        user_exists = test_user.user_exists("shiko")
 
         self.assertTrue(user_exists)
 
