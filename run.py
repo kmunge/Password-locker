@@ -171,6 +171,7 @@ def main():
                             print(f'Looks like you do not have that kind of a credential')
                             print ('\n')
 
+                #creating new credentials 
                 elif short_code == 'cc':
 
                         print ('\n')
@@ -191,12 +192,13 @@ def main():
                                 account_password = input()
                                 break
                             elif short_code =='gp':
-                                chars = "abcdefghijklmnopqrstuvwxyz1234567890"
+                                chars = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()"
                                 account_password = "".join(random.choice(chars) for _ in range(10))
                                 break
                             else: 
                                 print('Ooops!I did not get that. Please try again!')
                             
+                                #saves created credentials
 
                         save_credentials(create_credentials(platform, account_user_name, account_password))
                         print('\n')
