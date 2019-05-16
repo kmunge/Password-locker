@@ -30,7 +30,7 @@ def create_credentials(platform,account_user_name,account_password):
     allows to create new credentials
     '''
     new_credentials = Credentials(platform,account_user_name,account_password)
-    return nnew_credentials
+    return new_credentials
 
 def save_credentials(credentials):
     '''
