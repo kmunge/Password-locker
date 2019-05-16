@@ -1,11 +1,15 @@
 # Password-Locker App
 
 #### Password locker is here to help you manage your login credentials safely without corruption
+#### Have fun in your explore
 
 #### By **Kevin Munge**
 
 ## Description
-The application makes it easy for users with many accounts to keep track of their login details; i.e the platform, the login username and the password to access their accounts. Users are able to store all these details in a centralised place and have access to them whenever they want. Users can save their details, display all their saved accounts with their individual details, delete unneccesary accounts and search for specific accounts among what has already been saved.
+The application makes it easy for users with many accounts to keep track of their login details; i.e the platform, the login username and the
+password to access their accounts. Users are able to store all these details in a centralised place and have access to them whenever they want.
+Users can save their details, display all their saved accounts with their individual details, delete unneccesary accounts and search for specific
+accounts among what has already been saved.
 
 ## Application Specifications
 * A user first runs the application on the terminal using the command: python3.6 run.py
@@ -37,7 +41,7 @@ To test the credentials and user files I used:
 
 ## Known Bugs
 There are currently no known bugs
-
+Reported bugs shall be taken upon by technical team
 ## Technologies Used
 Python3.6
 vs Code
