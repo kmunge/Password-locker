@@ -12,7 +12,8 @@ Users can save their details, display all their saved accounts with their indivi
 accounts among what has already been saved.
 
 ## Application Specifications
-* A user first runs the application on the terminal using the command: python3.6 run.py
+* please clone this repo first then :(git clone https://github.com/kmunge/Password-locker.git)
+* A user runs the application on the terminal using the command: python3.6 run.py
 * They will receive a welcome message asking for their name.
 * After the name they will be directed to a section where they need to choose whether they want to create an account, login or exit the application.
 * depending on what they choose they will be directed to a new path.
