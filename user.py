@@ -27,8 +27,8 @@ class User:
         '''
         User.user_list.append(self)
 
-    @classmethod
-    def find_by_user_name(cls, user_name):
+    
+    def find_by_user_name(self, name):
         '''
         Method that takes in a user_name and returns the user details that match that user_name
 
@@ -39,12 +39,12 @@ class User:
 
         '''
 
-        for user in cls.user_list:
-            if user.user_name == user_name:
+        for user in self.user_list:
+            if user.user_name == name:
                 return user
 
-    @classmethod
-    def user_exists(cls, user_name):
+ 
+    def user_exists(self, user_name):
         '''
         Method to check if user exists in the user_list
 
@@ -53,57 +53,6 @@ class User:
         returns:
             boolean: true or false depending on existance of user
         '''
-        for user in cls.user_list:
-            if user in cls.user_name == user_name:
-                return True
-            return False
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for user in self.user_list:
+            if user.user_name==user_name:
+                return True 
