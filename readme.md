@@ -18,6 +18,17 @@ The application makes it easy for users with many accounts to keep track of thei
 * One can view their saved accounts and even has the ability to search for a specific saved account by using the account platform name.
 * When users are done saving their credentials they can then use a short-code and exit the application.
 
+## bdd
+| Behaviour | Input | Output |
+| :---------------- | :---------------: | ------------------: |
+| Display codes for navigation | **In terminal: $./password_locker.py** | Welcome, choose an option: na-Create Account, ex-Exit |
+| Display prompt for creating an account | **Enter: na** | Enter your first name, last name and password |
+| Display prompt for login in | **Enter: li** | Enter your account name and password |
+| Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, fd - find Credential,ex - exit |
+| Display prompt for creating a credential | **Enter: cc** | Enter the site name, your username and password |
+| Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
+| Exit application | **Enter: ex** | Exit the current navigation stage |
+
 
 ## Testing the Application
 To test the credentials and user files I used: 
